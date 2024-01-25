@@ -11,12 +11,14 @@
 <body>
     <div class="main">
         <div class="nav">
-            <input type="text">
+            <input type="text" placeholder="search other city">
             <button class="search-btn">
                 <?xml version="1.0" ?><svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"/></svg>
             </button>
         </div>
-        <h1 class="city-name">Tilburg</h1>
+        <div class="city-name-container">
+            <h1 class="city-name">Tilburg</h1>
+        </div>
         <div class="summary">
             <div class="img">
                 <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 96 96" height="96px" version="1.1" viewBox="0 0 96 96" width="96px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Dibujo"><g><path d="M66,40c-0.507,0-1.112,0.079-1.688,0.184C62.218,33.012,55.663,28,48,28c-7.664,0-14.218,5.012-16.312,12.184    C31.112,40.079,30.507,40,30,40c-6.065,0-11,4.935-11,11s4.935,11,11,11h36c6.065,0,11-4.935,11-11S72.065,40,66,40z M66,58H30    c-3.86,0-7-3.141-7-7s3.14-7,7-7c0.277,0,0.723,0.068,1.194,0.162V46c0,1.104,0.896,2,2,2s2-0.896,2-2v-3.226    C36.27,36.524,41.632,32,48,32c6.371,0,11.735,4.529,12.808,10.784V46c0,1.104,0.896,2,2,2c1.105,0,2-0.896,2-2v-1.837    C65.278,44.069,65.726,44,66,44c3.859,0,7,3.141,7,7S69.859,58,66,58z"/></g></g></svg>
@@ -30,14 +32,37 @@
             </div>
         </div>
         <div class="forecast-container">
-            <div class="hourly-forecast"></div>
-            <div class="weekly-forecast"></div>
-            <div class="sunrise"></div>
-            <div class="uv-index"></div>
-            <div class="humidity"></div>
-            <div class="wind"></div>
-            <div class="rainfall"></div>
-            <div class="moon"></div>
+            <div class="hourly-forecast">
+                <h1 class="title">Hourly forecast</h1>
+                <div class="hourly-container">
+                    <div class="hourly-forecast-1">
+                        <p class="time">1pm</p>
+                        <div class="icon"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 96 96" height="96px" version="1.1" viewBox="0 0 96 96" width="96px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Dibujo"><g><path d="M66,40c-0.507,0-1.112,0.079-1.688,0.184C62.217,33.012,55.663,28,48,28s-14.218,5.012-16.311,12.184    C31.112,40.079,30.507,40,30,40c-6.065,0-11,4.935-11,11s4.935,11,11,11c1.104,0,2-0.896,2-2s-0.896-2-2-2c-3.86,0-7-3.141-7-7    s3.14-7,7-7c0.277,0,0.723,0.068,1.193,0.162V46c0,1.104,0.896,2,2,2s2-0.896,2-2v-3.221C36.267,36.527,41.63,32,48,32    s11.732,4.527,12.807,10.779V46c0,1.104,0.896,2,2,2s2-0.896,2-2v-1.838C65.277,44.068,65.722,44,66,44c3.859,0,7,3.141,7,7    s-3.141,7-7,7c-1.104,0-2,0.896-2,2s0.896,2,2,2c6.065,0,11-4.935,11-11S72.065,40,66,40z"/><path d="M49.485,52.06c-1.073-0.27-2.158,0.384-2.426,1.455l-6,24c-0.268,1.072,0.384,2.157,1.455,2.426    C42.677,79.981,42.84,80,43.001,80c0.896,0,1.711-0.606,1.939-1.515l6-24C51.208,53.413,50.557,52.328,49.485,52.06z"/><path d="M57.484,58.06c-1.072-0.271-2.157,0.384-2.425,1.455l-3,12c-0.268,1.072,0.384,2.158,1.456,2.426    c0.163,0.041,0.326,0.06,0.486,0.06c0.896,0,1.712-0.606,1.939-1.515l2.999-12C59.208,59.413,58.556,58.327,57.484,58.06z"/><path d="M38.484,58.06c-1.069-0.271-2.157,0.384-2.425,1.455l-3,12c-0.268,1.072,0.384,2.158,1.456,2.426    c0.163,0.041,0.326,0.06,0.486,0.06c0.896,0,1.712-0.606,1.939-1.515l3-12C40.208,59.413,39.556,58.327,38.484,58.06z"/></g></g></svg></div>
+                        <p class="temp">30°</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weekly-forecast">
+                <h1 class="title">Weekly forecast</h1>
+            </div>
+            <div class="sunrise">
+                <h1 class="title">Sunrise</h1>
+            </div>
+            <div class="uv-index">
+                <h1 class="title">UV-index</h1>
+            </div>
+            <div class="humidity">
+                <h1 class="title">Humidity</h1>
+            </div>
+            <div class="wind">
+                <h1 class="title">Wind</h1>
+            </div>
+            <div class="rainfall">
+                <h1 class="title">Rainfall</h1>
+            </div>
+            <div class="moon">
+                <h1 class="title">Moon</h1>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
