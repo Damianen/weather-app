@@ -107,7 +107,17 @@ input {
 .forecast-container>div {
     background-color: rgba(116, 131, 154, 0.7);
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-container svg {
+    height: 50px;
+    width: 50px;
 }
 
 .hourly-container {
@@ -129,7 +139,7 @@ input {
 }
 
 .forecast-container .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hourly-forecast {
@@ -138,4 +148,50 @@ input {
 
 .weekly-forecast {
     grid-area: 2 / 1 / 4 / 2;
+}
+
+.weekly-forecast-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.weekly-forecast-container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+
+.min-temp {
+    color:rgb(116, 131, 154);
+}
+
+.next-time {
+    font-size: 4rem;
+}
+
+.other-container {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.sunrise .container {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.uv-now {
+    font-size: 5rem;
+}
+
+.uv-score {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.uv-forecast {
+    font-size: 1.5rem;
 }
