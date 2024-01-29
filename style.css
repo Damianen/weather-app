@@ -113,6 +113,7 @@ input {
 .title-container {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .title-container svg {
@@ -121,8 +122,10 @@ input {
 }
 
 .hourly-container {
-    padding: 20px;
-    height: 70%;
+    height: 80%;
+    display: flex;
+    gap: 25px;
+    overflow: scroll;
 }
 
 .hourly-container>div {
@@ -153,6 +156,8 @@ input {
 .weekly-forecast-container{
     display: flex;
     flex-direction: column;
+    overflow: scroll;
+    height: 90%;
 }
 
 .weekly-forecast-container div {
@@ -177,7 +182,6 @@ input {
 }
 
 .sunrise .container {
-    height: 90%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -194,4 +198,55 @@ input {
 
 .uv-forecast {
     font-size: 1.5rem;
+}
+
+.humidity-percentage {
+    font-size: 5rem;
+}
+
+.wind .container {
+    font-size: 2rem;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.uv-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.uv-index .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container svg {
+    height: 80px;
+}
+
+.rainfall-amount {
+    font-size: 3rem;
+}
+
+.hours-rainfall {
+    font-size: 3rem;
+}
+
+.moon-phase-container {
+    display: flex;
+    align-items: center;
+}
+
+.moon .container {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.moon .title-container {
+    padding: 0;
 }
