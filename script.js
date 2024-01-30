@@ -1,4 +1,4 @@
-fetch("https://api.weatherapi.com/v1/current.json?key=fcc0d01cc9344f61b82161356242401&q=tilburg")
+fetch("http://api.weatherapi.com/v1/forecast.json?key=fcc0d01cc9344f61b82161356242401&q=Tilburg&days=7&aqi=no&alerts=no")
 .then(function(response) {
     return response.json();
 })
@@ -10,7 +10,24 @@ fetch("https://api.weatherapi.com/v1/current.json?key=fcc0d01cc9344f61b821613562
 });
 
 function setWeather(response) {
-    console.log(response);
+    document.querySelector(".city-name").textContent = response.location.name;
+    document.querySelector(".temperature").textContent = response.current.temp_c + "°";
+    document.querySelector(".description").textContent = response.current.condition.text;
+
+    document.querySelector(".next-time").textContent = response.forecast.forecastday[1].astro.sunset;
+    document.querySelector(".other-time").textContent = "sunrise: " + response.forecast.forecastday[1].astro.sunrise;
+
+    document.querySelector(".uv-now").textContent = response.current.uv;
+
+    document.querySelector(".humidity-percentage").textContent = response.current.humidity + "%";
+
+    document.querySelector(".wind-direction").textContent = response.current.wind_dir;
+    document.querySelector(".wind-speed").textContent = response.current.wind_kph + " km/h";
+
+    document.querySelector(".rainfall-amount").textContent = response.current.precip_in + '"';
+
+    document.querySelector(".moon-phase").textContent = response.forecast.forecastday[1].astro.moon_phase;
+    document.querySelector(".moon-rise-set").textContent = "moonrise: " + response.forecast.forecastday[1].astro.moonrise;
 }
 
 function setHourlyForecast(response) {
