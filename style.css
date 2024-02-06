@@ -168,7 +168,7 @@ input {
 }
 
 .min-temp {
-    color:rgb(116, 131, 154);
+    color:rgb(21, 25, 31);
 }
 
 .next-time {
@@ -245,6 +245,7 @@ input {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+    gap:50px;
 }
 
 .moon .title-container {
