@@ -1,5 +1,5 @@
 function getWeatherData(cityName) {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=fcc0d01cc9344f61b82161356242401&q=${cityName}&days=7&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=fcc0d01cc9344f61b82161356242401&q=${cityName}&days=7&aqi=no&alerts=no`)
     .then(function(response) {
         return response.json();
     })
