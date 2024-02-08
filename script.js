@@ -5,6 +5,11 @@ function getWeatherData(cityName) {
     })
     .then(function(response) {
         setWeather(response);
+        const hourlyForecast = document.querySelector(".hourly-container");
+        hourlyForecast.innerHTML = "";
+        const weeklyForecastContainer = document.querySelector(".weekly-forecast-container");
+        weeklyForecastContainer.innerHTML = "";
+
 
         let hours = 0;
 
